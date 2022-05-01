@@ -14,6 +14,7 @@
 		ED6B013A281F1C96000A07CC /* RandomUsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6B0139281F1C96000A07CC /* RandomUsersTests.swift */; };
 		ED6B0144281F1C96000A07CC /* RandomUsersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6B0143281F1C96000A07CC /* RandomUsersUITests.swift */; };
 		ED6B0146281F1C96000A07CC /* RandomUsersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6B0145281F1C96000A07CC /* RandomUsersUITestsLaunchTests.swift */; };
+		ED6B0153281F1E8E000A07CC /* UserFetchingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6B0152281F1E8E000A07CC /* UserFetchingClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		ED6B013F281F1C96000A07CC /* RandomUsersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomUsersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED6B0143281F1C96000A07CC /* RandomUsersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUsersUITests.swift; sourceTree = "<group>"; };
 		ED6B0145281F1C96000A07CC /* RandomUsersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUsersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ED6B0152281F1E8E000A07CC /* UserFetchingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFetchingClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				ED6B0128281F1C95000A07CC /* RandomUsersApp.swift */,
+				ED6B0152281F1E8E000A07CC /* UserFetchingClient.swift */,
 				ED6B012A281F1C95000A07CC /* ContentView.swift */,
 				ED6B012C281F1C96000A07CC /* Assets.xcassets */,
 				ED6B012E281F1C96000A07CC /* Preview Content */,
@@ -259,6 +262,7 @@
 			files = (
 				ED6B012B281F1C95000A07CC /* ContentView.swift in Sources */,
 				ED6B0129281F1C95000A07CC /* RandomUsersApp.swift in Sources */,
+				ED6B0153281F1E8E000A07CC /* UserFetchingClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
