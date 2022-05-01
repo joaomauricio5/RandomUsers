@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var userData = UserData()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ScrollView{
+            Text(userData.users)
+                .padding()
+        }
     }
 }
 
