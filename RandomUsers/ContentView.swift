@@ -9,10 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var userData = UserData()
+    
     var body: some View {
-        ScrollView{
-            Text(userData.users)
-                .padding()
+        NavigationView {
+            VStack {
+                Text("Raw JSON Data:")
+                ScrollView {
+                    Text(userData.users)
+                        
+                }
+            }
+            .navigationTitle("Random Users")
+            .padding()
         }
     }
 }

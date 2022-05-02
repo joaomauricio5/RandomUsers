@@ -13,7 +13,15 @@ class UserData: ObservableObject {
     
     init() {
         Task{
-            self.users = try! await UserFetchingClient.getUsers()
+            await loadUsers()
+        }
+    }
+    
+    func loadUsers() async {
+        do {
+            self.users = try await UserFetchingClient.getUsers()
+        } catch {
+            self.users = "Error ocurred"
         }
     }
 }
