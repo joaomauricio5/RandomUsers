@@ -9,7 +9,7 @@ import Foundation
 
 @MainActor
 class UserData: ObservableObject {
-    @Published var users: String = ""
+    @Published var users = [User]()
     
     init() {
         Task{
@@ -21,7 +21,7 @@ class UserData: ObservableObject {
         do {
             self.users = try await UserFetchingClient.getUsers()
         } catch {
-            self.users = "Error ocurred"
+            print(error)
         }
     }
 }
