@@ -14,7 +14,19 @@ struct ContentView: View {
         NavigationView {
             VStack(alignment: .leading) {
                 List(userData.users) { user in
-                    Text(user.fullName)
+                    HStack {
+                        AsyncImage(url: URL(string: user.pictureURL)) { image in
+                            image.clipShape(Circle())
+                                .shadow(radius: 3.0)
+                        } placeholder: {
+                            Image(systemName: "person")
+                        }
+                        .frame(width: 80, height: 80, alignment: .center)
+                        .padding(.trailing, 10)
+                        
+                        
+                        Text(user.fullName)
+                    }
                 }
             }
             .navigationTitle("Random Users")
