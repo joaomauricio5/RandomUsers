@@ -27,7 +27,12 @@ struct ContentView: View {
                         
                         Text(user.fullName)
                     }
+        
                 }
+                Button(action: {Task{
+                    await userData.loadUsers()
+                } },
+                       label: {Text("Add more users")})
             }
             .navigationTitle("Random Users")
         }

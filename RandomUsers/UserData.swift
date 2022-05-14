@@ -19,7 +19,7 @@ class UserData: ObservableObject {
     
     func loadUsers() async {
         do {
-            self.users = try await UserFetchingClient.getUsers()
+            self.users.append(contentsOf: try await UserFetchingClient.getUsers())
         } catch {
             print(error)
         }
