@@ -26,6 +26,12 @@ struct ContentView: View {
                             .padding(.trailing, 10)
                             
                             Text(user.fullName)
+                        }.onAppear {
+                            if user == userData.users.last {
+                                Task {
+                                    await userData.loadUsers()
+                                }
+                            }
                         }
                     }
                     Button(action: {

@@ -14,7 +14,11 @@ struct Response: Decodable {
         case users = "results"
     }
 }
-struct User: Decodable, Identifiable {
+struct User: Decodable, Identifiable, Equatable {
+    static func == (lhs: User, rhs: User) -> Bool {
+        lhs.id == rhs.id ? true : false
+    }
+    
     let id: String
     let name: Name
     let pictureURL: String
